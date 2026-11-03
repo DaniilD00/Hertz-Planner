@@ -1,0 +1,28 @@
+{
+  "name": "hertz-planner",
+  "private": true,
+  "version": "0.5.0",
+  "description": "Dark interactive map of free one-way car trips in Sweden and Norway (Hertz Freerider, DriveBack, Drive4Free)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:pages": "tsc --noEmit && vite build --mode pages",
+    "snapshot": "node scripts/snapshot.mjs",
+    "start": "node server.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "maplibre-gl": "5.24.0",
+    "polygon-clipping": "0.15.7"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "3.2.7"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

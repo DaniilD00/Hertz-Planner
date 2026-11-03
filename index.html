@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0f1318" />
+    <title>Free car trips</title>
+    <meta name="description" content="Map of free one-way car trips in Sweden and Norway from Hertz Freerider, DriveBack and Drive4Free." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar" aria-label="Trips"></aside>
+      <main class="map-wrap">
+        <div id="map" class="map" role="region" aria-label="Map of free car trips"></div>
+        <div class="legend" id="legend"></div>
+        <div class="tooltip" id="tooltip" hidden></div>
+        <div class="banner" id="banner" hidden></div>
+        <p class="roads" id="roads" role="status" hidden></p>
+        <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+      </main>
+      <aside class="panel" id="panel" aria-label="Trip details" hidden></aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
